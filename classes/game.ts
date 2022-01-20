@@ -303,8 +303,8 @@ export class Game {
         let loaded:Game=await this.fetchObject(`./levels/${hardLevels}.json`)
         this.masses=[]
         this.springs=[]
-        if(loaded.loseLine)
-        {this.loseLine=loaded.loseLine}
+        // if(loaded.loseLine)
+        // {this.loseLine=loaded.loseLine}
         
         for (let i=0;i<loaded.masses.length;i++){
             let m = loaded.masses[i]
