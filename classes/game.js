@@ -234,7 +234,7 @@ export class Game {
         // let loaded:Game= JSON.parse(dataString!) //you now need to remake springs and masses based on the loaded data
         let hardLevels = document.getElementById("hard").value;
         console.log(hardLevels);
-        let loaded = await this.fetchObject(`levels/${hardLevels}.json`);
+        let loaded = await this.fetchObject(`./levels/${hardLevels}.json`);
         this.masses = [];
         this.springs = [];
         if (loaded.loseLine) {

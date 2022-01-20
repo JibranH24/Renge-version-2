@@ -300,7 +300,7 @@ export class Game {
         
         let hardLevels=(<HTMLSelectElement>document.getElementById("hard")).value
         console.log(hardLevels)
-        let loaded:Game=await this.fetchObject(`levels/${hardLevels}.json`)
+        let loaded:Game=await this.fetchObject(`./levels/${hardLevels}.json`)
         this.masses=[]
         this.springs=[]
         if(loaded.loseLine)
