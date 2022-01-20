@@ -142,7 +142,7 @@ export class Game {
         // }
         let loadButton = document.createElement("button");
         loadButton.classList.add("load");
-        loadButton.innerHTML = "Load Level";
+        loadButton.innerHTML = "Load Level - Coming Soon";
         container.appendChild(loadButton);
         loadButton.addEventListener("click", () => this.loadLevel());
         // let removeButton = document.createElement("button")
